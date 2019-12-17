@@ -47,7 +47,7 @@ class SelectTest extends TestCase
         $this->subject
             ->columns([
                 'sub' => (new SqlSrv\Statement\Select($this->createMock(SqlSrv\Database::class)))
-                    ->from('test2')
+                    ->from('test2'),
             ])
             ->from('test1');
 
@@ -67,7 +67,8 @@ class SelectTest extends TestCase
         $this->subject
             ->from([
                 'sub' => (new SqlSrv\Statement\Select($this->createMock(SqlSrv\Database::class)))
-                    ->from('test')]);
+                    ->from('test'),
+            ]);
 
         $this->assertEquals('SELECT * FROM (SELECT * FROM test) AS sub', $this->subject->__toString());
     }

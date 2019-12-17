@@ -3,7 +3,7 @@
     "description": "Microsoft SQL Server extension to faapz/pdo",
     "type": "library",
     "keywords": ["faapz", "pdo", "microsoft", "sql", "sql-server"],
-    "homepage": "https://github.com/FaaPz/PDO",
+    "homepage": "https://github.com/FaaPz/PDO-SqlSvr",
     "license": "MIT",
     "authors": [
         {
@@ -16,17 +16,17 @@
             "name": "Alexander Barker",
             "email": "alex@1stleg.com",
             "homepage": "https://github.com/kwhat/",
-            "role": "Maintainer"
+            "role": "Collaborator"
         }
     ],
     "support": {
-        "issues": "https://github.com/FaaPz/PDO/issues",
-        "docs": "https://github.com/FaaPz/PDO/blob/master/docs/README.md"
+        "issues": "https://github.com/FaaPz/PDO-SqlSvr/issues",
+        "docs": "https://github.com/FaaPz/PDO-SqlSvr/blob/master/docs/README.md"
     },
     "require": {
         "php": ">=7.2.0",
         "ext-pdo": "*",
-        "faapz/pdo": "^2.0.1"
+        "faapz/pdo": "^2.1.0"
     },
     "require-dev": {
         "phan/phan": "^2.2",
