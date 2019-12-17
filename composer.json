@@ -1,0 +1,54 @@
+{
+    "name": "faapz/pdo-sqlsvr",
+    "description": "Microsoft SQL Server extension to faapz/pdo",
+    "type": "library",
+    "keywords": ["faapz", "pdo", "microsoft", "sql", "sql-server"],
+    "homepage": "https://github.com/FaaPz/PDO",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fabian de Laender",
+            "email": "fabian@faapz.productions",
+            "homepage": "https://faapz.productions",
+            "role": "Owner"
+        },
+        {
+            "name": "Alexander Barker",
+            "email": "alex@1stleg.com",
+            "homepage": "https://github.com/kwhat/",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/FaaPz/PDO/issues",
+        "docs": "https://github.com/FaaPz/PDO/blob/master/docs/README.md"
+    },
+    "require": {
+        "php": ">=7.2.0",
+        "ext-pdo": "*",
+        "faapz/pdo": "^2.0.1"
+    },
+    "require-dev": {
+        "phan/phan": "^2.2",
+        "phpunit/phpunit": "^8",
+        "squizlabs/php_codesniffer": "3.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "FaaPz\\PDO\\SqlSvr\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FaaPz\\PDO\\SqlSvr\\Test\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "scripts": {
+        "lint": [
+            "phpcs -s --standard=phpcs.xml",
+            "phan"
+        ],
+        "test": "phpunit -v --coverage-html build/coverage tests/"
+    }
+}
